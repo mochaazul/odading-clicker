@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,900;1,900&display=swap');
+
+body{
+    background-color: #00162e;
+background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+.body-container{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+.main-container{
+    max-width: 480px;
+    display: flex;
+    align-items: center;
+    font-family: 'Epilogue',sans-serif;
+    flex-direction: column;
+    color:beige;
+    height: 100vh;
+}
+h1{
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: 900;
+    font-style: italic;
+}
+.obj img{
+    user-select: none;
+    width: 200px;
+    pointer-events: none;
+}
+.obj{
+    background-image: url("./assets/image/odading1.png");
+    background-size: cover;    
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    display: block;
+    background-color: beige;
+    border-radius: 10000px;
+    transition: all 50ms;
+}
+.objclicked{
+    transform: scale(1.06);
+    transition: all 50ms;
+}
+.content{
+    display: flex;
+    flex-grow: 1;
+}
+.footer{
+    margin-bottom:1rem;
+}
+.dmg-tooltip{
+    font-family: 'Epilogue',sans-serif;
+    font-weight: 900;
+
+}
